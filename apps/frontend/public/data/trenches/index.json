@@ -1,0 +1,55 @@
+{
+  "source": "PB2002 subduction segments (Peter Bird, 2003)",
+  "attribution": "Peter Bird / fraxen/tectonicplates",
+  "layers": [
+    {
+      "id": "philippines",
+      "name": "Philippines",
+      "file": "/data/trenches/philippines.geojson",
+      "featureCount": 28,
+      "defaultEnabled": true
+    },
+    {
+      "id": "southeast-asia",
+      "name": "Southeast Asia",
+      "file": "/data/trenches/southeast-asia.geojson",
+      "featureCount": 44,
+      "defaultEnabled": false
+    },
+    {
+      "id": "japan-marianas",
+      "name": "Japan & Marianas",
+      "file": "/data/trenches/japan-marianas.geojson",
+      "featureCount": 109,
+      "defaultEnabled": false
+    },
+    {
+      "id": "indonesia-australia",
+      "name": "Indonesia & Australia",
+      "file": "/data/trenches/indonesia-australia.geojson",
+      "featureCount": 292,
+      "defaultEnabled": false
+    },
+    {
+      "id": "americas",
+      "name": "Americas",
+      "file": "/data/trenches/americas.geojson",
+      "featureCount": 394,
+      "defaultEnabled": false
+    },
+    {
+      "id": "mediterranean",
+      "name": "Mediterranean",
+      "file": "/data/trenches/mediterranean.geojson",
+      "featureCount": 54,
+      "defaultEnabled": false
+    },
+    {
+      "id": "global-other",
+      "name": "Global (other)",
+      "file": "/data/trenches/global-other.geojson",
+      "featureCount": 208,
+      "defaultEnabled": false
+    }
+  ]
+}

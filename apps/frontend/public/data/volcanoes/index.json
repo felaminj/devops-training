@@ -1,0 +1,97 @@
+{
+  "source": "PHIVOLCS (Philippines) and Smithsonian GVP Holocene volcanoes",
+  "attribution": "PHIVOLCS / Smithsonian Institution GVP",
+  "layers": [
+    {
+      "id": "philippines",
+      "file": "/data/volcanoes/philippines.geojson",
+      "featureCount": 309,
+      "name": "Philippines",
+      "defaultEnabled": true
+    },
+    {
+      "id": "sunda-banda",
+      "file": "/data/volcanoes/sunda-banda.geojson",
+      "featureCount": 78,
+      "name": "Sunda-Banda",
+      "defaultEnabled": false
+    },
+    {
+      "id": "eastern-asia",
+      "file": "/data/volcanoes/eastern-asia.geojson",
+      "featureCount": 19,
+      "name": "Eastern Asia",
+      "defaultEnabled": false
+    },
+    {
+      "id": "northwestern-pacific",
+      "file": "/data/volcanoes/northwestern-pacific.geojson",
+      "featureCount": 207,
+      "name": "Northwestern Pacific",
+      "defaultEnabled": false
+    },
+    {
+      "id": "western-pacific",
+      "file": "/data/volcanoes/western-pacific.geojson",
+      "featureCount": 75,
+      "name": "Western Pacific",
+      "defaultEnabled": false
+    },
+    {
+      "id": "southwestern-pacific",
+      "file": "/data/volcanoes/southwestern-pacific.geojson",
+      "featureCount": 62,
+      "name": "Southwestern Pacific",
+      "defaultEnabled": false
+    },
+    {
+      "id": "tonga-kermadec",
+      "file": "/data/volcanoes/tonga-kermadec.geojson",
+      "featureCount": 44,
+      "name": "Tonga-Kermadec",
+      "defaultEnabled": false
+    },
+    {
+      "id": "north-america",
+      "file": "/data/volcanoes/north-america.geojson",
+      "featureCount": 149,
+      "name": "North America",
+      "defaultEnabled": false
+    },
+    {
+      "id": "south-america",
+      "file": "/data/volcanoes/south-america.geojson",
+      "featureCount": 152,
+      "name": "South America",
+      "defaultEnabled": false
+    },
+    {
+      "id": "central-america",
+      "file": "/data/volcanoes/central-america.geojson",
+      "featureCount": 97,
+      "name": "Central America & Caribbean",
+      "defaultEnabled": false
+    },
+    {
+      "id": "eastern-africa",
+      "file": "/data/volcanoes/eastern-africa.geojson",
+      "featureCount": 91,
+      "name": "Eastern Africa",
+      "defaultEnabled": false
+    },
+    {
+      "id": "europe-africa",
+      "file": "/data/volcanoes/europe-africa.geojson",
+      "featureCount": 77,
+      "name": "Europe & Northern Africa",
+      "defaultEnabled": false
+    },
+    {
+      "id": "global-other",
+      "file": "/data/volcanoes/global-other.geojson",
+      "featureCount": 164,
+      "name": "Global (other)",
+      "defaultEnabled": false
+    }
+  ]
+}

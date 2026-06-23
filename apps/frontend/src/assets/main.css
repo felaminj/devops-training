@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-100 text-slate-900 antialiased;
+}
+
+#app {
+  @apply min-h-screen;
+}
+
+.leaflet-map-root {
+  width: 100%;
+  z-index: 0;
+}
+
+.leaflet-map-root.leaflet-container {
+  height: 100%;
+  min-height: 420px;
+}
+
+.modal-earthquake-map {
+  height: 220px;
+  width: 100%;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.modal-earthquake-map .leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: #e2e8f0;
+}
+
+.modal-intensity-map {
+  width: 100%;
+  background: #e2e8f0;
+}
+
+.modal-intensity-map .leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: #e2e8f0;
+}
+
+.leaflet-container {
+  font-family: inherit;
+  background: #e2e8f0;
+  width: 100%;
+  z-index: 0;
+}
+
+.volcano-marker-icon {
+  background: transparent;
+  border: none;
+}
+
+.earthquake-marker-new {
+  animation: earthquake-marker-pulse 1.4s ease-in-out infinite;
+}
+
+.earthquake-marker-pulse-ring {
+  animation: earthquake-marker-ring 1.4s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes earthquake-marker-pulse {
+  0%,
+  100% {
+    stroke-opacity: 1;
+    fill-opacity: 0.9;
+  }
+
+  50% {
+    stroke-opacity: 0.65;
+    fill-opacity: 0.65;
+  }
+}
+
+@keyframes earthquake-marker-ring {
+  0% {
+    stroke-opacity: 0.55;
+    fill-opacity: 0.2;
+  }
+
+  70% {
+    stroke-opacity: 0.15;
+    fill-opacity: 0.05;
+  }
+
+  100% {
+    stroke-opacity: 0.55;
+    fill-opacity: 0.2;
+  }
+}
+
+.earthquake-popup-wrapper .leaflet-popup-content-wrapper {
+  border-radius: 0.75rem;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgb(15 23 42 / 0.15);
+}
+
+.earthquake-popup-wrapper .leaflet-popup-content {
+  margin: 0;
+  min-width: 240px;
+}
+
+.earthquake-popup {
+  padding: 0.75rem;
+}
+
+.earthquake-popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.earthquake-popup-badge {
+  border-radius: 9999px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.125rem 0.5rem;
+}
+
+.earthquake-popup-time {
+  color: #64748b;
+  font-size: 0.6875rem;
+}
+
+.earthquake-popup-place {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 0.5rem;
+}
+
+.earthquake-popup-grid {
+  display: grid;
+  gap: 0.25rem 0.5rem;
+  grid-template-columns: auto 1fr;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.earthquake-popup-grid dt {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.earthquake-popup-grid dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.earthquake-popup-hint {
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  margin: 0.625rem 0 0;
+  padding-top: 0.5rem;
+}
+
+.shakemap-intensity-overlay {
+  pointer-events: none;
+}
+
+.shakemap-epicenter-icon {
+  background: transparent;
+  border: none;
+}
+
+.shakemap-epicenter-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: #0f172a;
+  font-size: 26px;
+  line-height: 1;
+  text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 10px #fff;
+}
+
+.shakemap-legend-table th,
+.shakemap-legend-table td {
+  border: 1px solid #cbd5e1;
+  padding: 0.2rem 0.35rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.shakemap-legend-label {
+  background: #f8fafc;
+  color: #334155;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.shakemap-legend-cell {
+  background: #fff;
+  color: #334155;
+  min-width: 4.5rem;
+}
+
+.shakemap-legend-intensity {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.shakemap-symbol {
+  display: inline-block;
+}
+
+.shakemap-symbol-star {
+  color: #0f172a;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.shakemap-symbol-circle {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #0f172a;
+  border-radius: 9999px;
+  background: #f8fafc;
+}
+
+.marker-cluster-small,
+.marker-cluster-medium,
+.marker-cluster-large {
+  background-color: rgb(59 130 246 / 0.25);
+}
+
+.marker-cluster-small div,
+.marker-cluster-medium div,
+.marker-cluster-large div {
+  background-color: rgb(37 99 235 / 0.85);
+  color: #fff;
+  font-weight: 700;
+}

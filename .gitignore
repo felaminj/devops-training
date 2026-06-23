@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+coverage/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+.vscode/
+.idea/
+*.tsbuildinfo
+apps/frontend/src/**/*.js
+apps/frontend/src/**/*.js.map
+.husky/_
+scripts/.cache/

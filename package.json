@@ -1,0 +1,46 @@
+{
+  "name": "earthquake-monitoring-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev -w @earthquake/backend\" \"npm run dev -w @earthquake/frontend\"",
+    "build": "npm run build -w @earthquake/shared-types && npm run build -w @earthquake/shared-utils && npm run build -w @earthquake/backend && npm run build -w @earthquake/frontend",
+    "lint": "npm run lint -w @earthquake/shared-types && npm run lint -w @earthquake/shared-utils && npm run lint -w @earthquake/backend && npm run lint -w @earthquake/frontend",
+    "test": "npm run test -w @earthquake/shared-utils && npm run test -w @earthquake/backend && npm run test -w @earthquake/frontend",
+    "generate:fault-layers": "python3 scripts/generate-fault-layers.py",
+    "generate:trench-layers": "python3 scripts/generate-trench-layers.py",
+    "generate:volcano-layers": "python3 scripts/generate-volcano-layers.py",
+    "generate:geology-layers": "npm run generate:fault-layers && npm run generate:trench-layers && npm run generate:volcano-layers",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "concurrently": "^9.1.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.31.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,vue,js,cjs,mjs,json,md}": [
+      "prettier --write"
+    ],
+    "apps/backend/src/**/*.ts": [
+      "eslint --fix"
+    ],
+    "apps/frontend/src/**/*.{ts,vue}": [
+      "eslint --fix"
+    ],
+    "packages/**/*.ts": [
+      "eslint --fix"
+    ]
+  }
+}

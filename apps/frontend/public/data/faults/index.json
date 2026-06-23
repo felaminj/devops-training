@@ -1,0 +1,111 @@
+{
+  "source": "GEM Global Active Faults (CC BY-SA 4.0)",
+  "attribution": "GEM Foundation / PHIVOLCS (Philippines)",
+  "layers": [
+    {
+      "id": "africa",
+      "name": "Africa",
+      "file": "/data/faults/africa.geojson",
+      "featureCount": 1076,
+      "defaultEnabled": false
+    },
+    {
+      "id": "antarctica",
+      "name": "Antarctica",
+      "file": "/data/faults/antarctica.geojson",
+      "featureCount": 519,
+      "defaultEnabled": false
+    },
+    {
+      "id": "australia",
+      "name": "Australia",
+      "file": "/data/faults/australia.geojson",
+      "featureCount": 379,
+      "defaultEnabled": false
+    },
+    {
+      "id": "central-america",
+      "name": "Central America",
+      "file": "/data/faults/central-america.geojson",
+      "featureCount": 259,
+      "defaultEnabled": false
+    },
+    {
+      "id": "east-africa",
+      "name": "East Africa",
+      "file": "/data/faults/east-africa.geojson",
+      "featureCount": 558,
+      "defaultEnabled": false
+    },
+    {
+      "id": "europe",
+      "name": "Europe",
+      "file": "/data/faults/europe.geojson",
+      "featureCount": 1128,
+      "defaultEnabled": false
+    },
+    {
+      "id": "global-other",
+      "name": "Global (other catalogs)",
+      "file": "/data/faults/global-other.geojson",
+      "featureCount": 9456,
+      "defaultEnabled": false
+    },
+    {
+      "id": "mexico",
+      "name": "Mexico",
+      "file": "/data/faults/mexico.geojson",
+      "featureCount": 228,
+      "defaultEnabled": false
+    },
+    {
+      "id": "middle-east",
+      "name": "Middle East",
+      "file": "/data/faults/middle-east.geojson",
+      "featureCount": 778,
+      "defaultEnabled": false
+    },
+    {
+      "id": "new-zealand",
+      "name": "New Zealand",
+      "file": "/data/faults/new-zealand.geojson",
+      "featureCount": 635,
+      "defaultEnabled": false
+    },
+    {
+      "id": "northeast-asia",
+      "name": "Northeast Asia",
+      "file": "/data/faults/northeast-asia.geojson",
+      "featureCount": 291,
+      "defaultEnabled": false
+    },
+    {
+      "id": "philippines",
+      "name": "Philippines",
+      "file": "/data/faults/philippines.geojson",
+      "featureCount": 116,
+      "defaultEnabled": true
+    },
+    {
+      "id": "south-america",
+      "name": "South America",
+      "file": "/data/faults/south-america.geojson",
+      "featureCount": 437,
+      "defaultEnabled": false
+    },
+    {
+      "id": "taiwan",
+      "name": "Taiwan",
+      "file": "/data/faults/taiwan.geojson",
+      "featureCount": 38,
+      "defaultEnabled": false
+    },
+    {
+      "id": "united-states",
+      "name": "United States",
+      "file": "/data/faults/united-states.geojson",
+      "featureCount": 297,
+      "defaultEnabled": false
+    }
+  ]
+}
