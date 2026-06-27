@@ -2,9 +2,16 @@ node_modules/
 dist/
 build/
 coverage/
+# Environment files (never commit real secrets)
 .env
 .env.local
+.env.development
+.env.production
+.env.test
 .env.*.local
+# Always allow the safe templates
+!.env.example
+!**/.env.example
 *.log
 .DS_Store
 .vscode/
@@ -14,3 +21,20 @@ apps/frontend/src/**/*.js
 apps/frontend/src/**/*.js.map
 .husky/_
 scripts/.cache/
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+!example.tfvars
+.terraform.lock.hcl
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
