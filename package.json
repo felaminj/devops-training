@@ -15,7 +15,7 @@
     "generate:trench-layers": "python3 scripts/generate-trench-layers.py",
     "generate:volcano-layers": "python3 scripts/generate-volcano-layers.py",
     "generate:geology-layers": "npm run generate:fault-layers && npm run generate:trench-layers && npm run generate:volcano-layers",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.18.0",

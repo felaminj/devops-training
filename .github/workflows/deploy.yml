@@ -43,6 +43,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Shared packages compile to dist/ and are imported by the backend and
+      # frontend. They must be built before lint/test/build can resolve them.
+      - name: Build shared packages
+        run: |
+          npm run build -w @earthquake/shared-types
+          npm run build -w @earthquake/shared-utils
+
       - name: Run linter
         run: npm run lint
 
